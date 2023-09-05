@@ -2,26 +2,26 @@ DROP DATABASE IF EXISTS test;
 
 CREATE DATABASE test;
 
-CREATE TABLE Personne(
-    per_num  INT AUTO_INCREMENT,
+CREATE TABLE personne(
+    per_id  INT AUTO_INCREMENT NOT NULL,
     per_nom VARCHAR(50) NOT NULL,
     per_prenom VARCHAR(50) NOT NULL,
     per_adresse VARCHAR(255) NOT NULL,
     per_ville VARCHAR(50) NOT NULL,
     per_cp CHAR(5) NOT NULL,
-    PRIMARY KEY(per_num)
+    PRIMARY KEY(per_id)
 );
 
 
-CREATE TABLE Groupe(
-    gro_num INT AUTO_INCREMENT,
+CREATE TABLE groupe(
+    gro_id INT AUTO_INCREMENT NOT NULL,
     gro_libelle VARCHAR(50),
-    PRIMARY KEY(gro_num)
+    PRIMARY KEY(gro_id)
 );
 
-CREATE TABLE Appartient(
-    per_num INT,
-    gro_num INT,
-    FOREIGN KEY(per_num) REFERENCES Personne(per_num),
-    FOREIGN KEY(gro_num) REFERENCES Groupe(gro_num)
+CREATE TABLE appartient(
+    per_id INT,
+    gro_id INT,
+    FOREIGN KEY(per_id) REFERENCES personne(per_id),
+    FOREIGN KEY(gro_id) REFERENCES groupe(gro_id)
 );
