@@ -12,14 +12,15 @@ FROM station
 WHERE sta_altitude < 1000;
 
 --4- Afficher la liste des chambres ayant une capacité > 1
-SELECT DISTINCT cha_numero AS 'Le numéro de la chambre', cha_capacite AS 'la capacité'
+SELECT DISTINCT cha_id AS 'ID de la chambre',cha_numero AS 'Le numéro de la chambre', cha_capacite AS 'la capacité'
 FROM chambre
-WHERE cha_capacite > 1;
+WHERE cha_capacite > 1
+ORDER BY cha_numero;
 
 --5- Afficher les clients n’habitant pas à Londres
 SELECT cli_nom AS 'Nom', cli_ville AS 'Ville'
 FROM client
-WHERE cli_ville != 'Londres';
+WHERE cli_ville NOT LIKE '%Londre%';
 
 --6- Afficher la liste des hôtels située sur la ville de Bretou et possédant une catégorie > 3
 SELECT hot_nom AS "le nom de l'hôtel", hot_ville AS "La ville", hot_categorie AS "Categorie"
@@ -27,7 +28,7 @@ FROM hotel
 WHERE hot_ville = 'Bretou' && hot_categorie > 3;
 
 --7- Afficher la liste des hôtels avec leur station
-SELECT sta_nom AS 'le nom de la station', hot_nom AS 'le nom de l’hôtel', hot_categorie AS 'Categorie', hot_ville AS "La ville"
+SELECT hot_nom AS 'le nom de l’hôtel', sta_nom AS 'le nom de la station', hot_categorie AS 'Categorie', hot_ville AS "La ville"
 FROM station
 JOIN hotel ON hotel.hot_sta_id = station.sta_id;
 
@@ -36,6 +37,7 @@ SELECT hot_nom AS 'Le nom de l’hôtel', hot_categorie AS 'Categorie', hot_vill
 FROM hotel
 JOIN chambre ON chambre.cha_hot_id = hotel.hot_id
 ORDER BY hot_nom;
+
 --9- Afficher la liste des chambres de plus d'une place dans des hôtels situés sur la ville de Bretou
 SELECT hot_nom AS 'Le nom de l’hôtel', hot_categorie AS 'Categorie', hot_ville AS 'Ville', cha_numero  AS 'Le numéro de la chambre', cha_capacite AS 'la capacité'
 FROM hotel
@@ -49,7 +51,7 @@ FROM client
 JOIN reservation ON reservation.res_cli_id = client.cli_id
 JOIN chambre ON chambre.cha_hot_id = reservation.res_cha_id
 JOIN hotel ON hotel.hot_id = chambre.cha_hot_id
-GROUP BY cli_nom;
+GROUP BY res_date,cli_nom;
 
 --11- Afficher la liste des chambres avec le nom de l’hôtel et le nom de la station
 SELECT sta_nom AS 'Le nom de la station', hot_nom AS 'Le nom de l’hôtel',
