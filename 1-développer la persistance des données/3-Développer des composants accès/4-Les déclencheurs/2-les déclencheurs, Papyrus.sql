@@ -44,7 +44,10 @@ CREATE TRIGGER articles_acommander AFTER UPDATE ON produit
 
         SET qte = (SELECT stkale - stkphy FROM produit WHERE codart = NEW.codart);
         SET dejacommande = (SELECT aac_qte FROM articles_a_commander AAC JOIN produit PR ON PR.codart = AAC.aac_codart WHERE codart = NEW.codart);
-        IF (dejacommande != null) THEN SET qte_a_commander = qte - dejacommande; ELSE SET qte_a_commander = qte;
+
+        IF (dejacommande != null)
+        THEN SET qte_a_commander = qte - dejacommande; 
+        ELSE SET qte_a_commander = qte;
         END IF;
 
         IF (SELECT stkphy FROM produit WHERE codart = NEW.codart)  < (SELECT stkale FROM produit WHERE codart = NEW.codart)
