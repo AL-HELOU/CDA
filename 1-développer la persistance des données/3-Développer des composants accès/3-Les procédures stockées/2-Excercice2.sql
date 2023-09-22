@@ -1,7 +1,6 @@
 /*
 Exercice 2 : création d'une procédure stockée avec un paramètre en entrée
 Créer la procédure stockée Lst_Commandes, qui liste les commandes ayant un libellé particulier dans le champ obscom
-(cette requête sera construite à partir de la requête n°11).
 */
 DELIMITER |
 

@@ -3,8 +3,6 @@ Exercice 3 : création d'une procédure stockée avec plusieurs paramètres
 
 Créer la procédure stockée CA_ Fournisseur, qui pour un code fournisseur et une année entrée en paramètre
 calcule et restitue le CA potentiel de ce fournisseur pour l'année souhaitée
-(cette requête sera construite à partir de la requête n°19).
-
 */
 
 DELIMITER |
