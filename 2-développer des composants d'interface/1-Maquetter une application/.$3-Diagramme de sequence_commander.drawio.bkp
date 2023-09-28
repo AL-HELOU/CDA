@@ -1,4 +1,4 @@
-<mxfile host="Electron" modified="2023-09-28T09:43:49.572Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="6z_KyEQ_HhHf-sn5BLm9" version="21.7.5" type="device">
+<mxfile host="Electron" modified="2023-09-28T09:48:45.767Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/21.7.5 Chrome/114.0.5735.289 Electron/25.8.1 Safari/537.36" etag="sFzgXmUA45Q3mftphgzr" version="21.7.5" type="device">
   <diagram name="Page-1" id="2YBvvXClWsGukQMizWep">
     <mxGraphModel dx="2524" dy="870" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -139,12 +139,14 @@
         <mxCell id="JWJZoj7f2KtCbUOrZRci-71" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="JWJZoj7f2KtCbUOrZRci-60" vertex="1">
           <mxGeometry x="55" y="680" width="10" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="JWJZoj7f2KtCbUOrZRci-72" value="vérification" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="JWJZoj7f2KtCbUOrZRci-60" target="JWJZoj7f2KtCbUOrZRci-71" edge="1">
+        <mxCell id="JWJZoj7f2KtCbUOrZRci-72" value="vérification" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="JWJZoj7f2KtCbUOrZRci-60" target="JWJZoj7f2KtCbUOrZRci-71" edge="1" source="JWJZoj7f2KtCbUOrZRci-71">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="690" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="90" y="720" />
+              <mxPoint x="90" y="690" />
+              <mxPoint x="90" y="740" />
             </Array>
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="JWJZoj7f2KtCbUOrZRci-61" value="choisir mode paiement" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" parent="1" edge="1">
