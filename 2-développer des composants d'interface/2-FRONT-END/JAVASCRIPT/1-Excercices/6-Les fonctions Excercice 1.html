@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les fonctions ex 1</title>
+
+
+</head>
+
+<body>
+    <p id="cube"></p>
+    <p id="mult"></p>
+    <img id="papillon" alt="papillon" title="papillon">
+
+
+
+<script>
+    function produit(x, y)
+    {
+        x = window.prompt ('Entrez un nombre :');
+        y = window.prompt ('Entrez un multiplicateur :');
+
+        var para = ('<p>'+ 'Le produit de ' + x + ' x ' + y + ' est égal à '+ x*y + '</p>');
+        document.getElementById("mult").innerHTML = para;
+
+        var para2 = ( '<p>' + 'Le cube de ' + x + ' est égal à ' + x*x*x + '</p>');
+        document.getElementById("cube").innerHTML = para2;
+    }
+
+
+
+    function afficheImg(image)
+    {   
+        document.getElementById("papillon").src = image;
+    }
+
+    produit();
+
+    afficheImg('papillon.jpg');
+</script>
+
+</body>
+</html>

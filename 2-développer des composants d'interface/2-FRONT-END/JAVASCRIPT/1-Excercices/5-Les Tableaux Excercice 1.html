@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux EX 1</title>
+
+    <script>
+        /*
+        Exercice 1
+
+        Ecrivez un programme permettant de créer un tableau, dont la taille est saisie au clavier.
+
+        Ensuite l'utilisateur doit rentrer les différentes valeurs du tableau.
+
+        Puis votre programme doit afficher le contenu du tableau.*/
+
+        var taille = parseInt(window.prompt('Saissisez la taille du tableau :'));
+        var tableau = new Array(taille);
+
+        for(i=0; i<tableau.length; i++){
+            var mot = window.prompt('Saissisez le ' + (i+1) + ' valeur du tableau : ');
+            tableau[i] = mot;
+        }
+
+        tableau.forEach(element => document.write(element + " "));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les evenements EX 1</title>
+</head>
+<body>
+    <div>
+    <p>Saissisez un texte puis pressez le bouton 'Contrôler'</p>
+    <input type="text" id="txt">
+    <button id="btn">Contrôler</button>
+    </div>
+
+
+    <script>
+        let btn = document.querySelector('#btn');
+        let txt = document.querySelector('#txt');
+
+        btn.addEventListener('click' , function()
+        {
+            alert('Vous avez saisi : ' + txt.value);
+        })
+    </script>
+</body>
+</html>

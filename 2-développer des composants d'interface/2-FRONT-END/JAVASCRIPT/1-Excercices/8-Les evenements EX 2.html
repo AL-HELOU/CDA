@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Nombre magique</title>
+  </head>
+  <body>
+    <div id="label1">Entrez votre proposition</div>
+    <input id="textBox1" value="">
+    <input type="button" id="button1" value="Verifier"> 
+
+    <script>
+        let btn = document.getElementById('button1');
+        let rndm = Math.round(Math.random() * 10);
+        let txt = document.getElementById('textBox1');
+        let lbl = document.getElementById('label1');
+        console.log(rndm);
+        btn.addEventListener('click', function verif()
+        {
+            let txtvalue = parseInt(txt.value);
+            console.log(txt.value);
+            if (txtvalue == rndm)
+            {
+                alert('bravo !');
+            }
+            else if(txtvalue < rndm)
+            {
+                lbl.textContent = ('Trop petit');
+            }
+            else if(txtvalue > rndm)
+            {
+                lbl.textContent = ('Trop grand');
+            }
+        })
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,54 @@
+.Vcoo {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.oblig {
+    color: rgb(138, 16, 16);
+    font-size:  18px;
+}
+
+.form {padding: 20px 60px 0px 60px;}
+
+.labl {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.inpt {
+    margin-bottom: 40px;
+    margin-right: 25px;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.btn:hover{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+}
+
+.divbtn { margin-left: 150px; margin-top: 40px;}
+
+.divinpt {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#lablentrep,#txtarea{
+    display :inline-block;
+    vertical-align: middle;
+}
+
+
+.lablselect, #txtarea2{
+    display :inline-block;
+    vertical-align: middle;
+}
+
+#txtarea2 {margin-left: 27px;}

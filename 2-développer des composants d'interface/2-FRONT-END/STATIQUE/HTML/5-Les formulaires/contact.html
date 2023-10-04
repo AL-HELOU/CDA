@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        #promo {width: 100%; height: 220px;}
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <img src="/home/alhelou/MUHANNAD/CDA/2-développer des composants d'interface/2-FRONT-END/STATIQUE/HTML/jarditou_html_zip/images/jarditou_logo.jpg" alt="Jarditou" title="jarditou" width="380">
+        <p>La qualité depuis 70 ans</p>
+
+        <nav>
+            <ul>
+                <li><a href="/home/stag15/Bureau/MUHANNAD/FRONTEND/STATIQUE/HTML/Site%20jarditou/index.html"> Acceuil</a></li>
+                <li><a href="/home/stag15/Bureau/MUHANNAD/FRONTEND/STATIQUE/HTML/4-Les%20tableaux/tableau.html"> Tableau</a></li>
+                <li><a href="/home/stag15/Bureau/MUHANNAD/FRONTEND/STATIQUE/HTML/5-Les%20formulaires/contact.html">Contact</a> </li>
+            </ul>
+        </nav>
+        <img src="/home/alhelou/MUHANNAD/CDA/2-développer des composants d'interface/2-FRONT-END/STATIQUE/HTML/jarditou_html_zip/images/promotion.jpg" alt="promotion" title="promotion" id="promo">
+    </header>
+
+    <h2>Contact</h2>
+    <hr>
+    <h5>* Ces zones sont obligatoires</h5>
+    <form action="http://bienvu.net/script.php" method="post">
+
+        <fieldset>
+        <legend>Vos coordonnées</legend>
+
+            <label for="Nom">Votre nom* :</label>
+            <input type="text" name="Nom" id="Nom" required>
+            <br>
+            <label for="Prenom">Votre prénom* :</label>
+            <input type="text" name="Prenom" id="Prenom" required>
+            <br><br>
+
+            <div>
+            Sexe* :
+            <label for="Feminin"><input type="radio" name="sexe" id="Feminin" value="Feminin" required>Féminin</label>
+            <label for="Masculin"><input type="radio" name="sexe" id="Masculin" value="Masculin">Masculin</label>
+            </div>
+            <br>
+
+            <label for="date">Date de naissance* :</label>
+            <input type="date" name="date" id="date" required><br>
+
+            <label for="cp">Code postal* :</label>
+            <input type="text" name="cp" id="cp" required><br>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" name="adresse" id="adresse"><br>
+
+            <label for="ville">Ville :</label>
+            <input type="text" name="ville" id="ville"><br>
+
+            <label for="email">Email* :</label>
+            <input type="text" name="email" id="email" placeholder="muhannad.alhelou@afpa.fr" required>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Votre demande</legend>
+
+            <label for="sujet">Sujet* :</label>
+            <select name="sujet" id="sujet" required>
+                <option value="" selected>Veuillez séléctionner un sujet</option>
+                <option value="mescommandes">Mes commandes</option>
+                <option value="question sur un produit">Question sur un produit</option>
+                <option value="reclamation">Réclamation</option>
+                <option value="autres">Autres</option>
+            </select>
+
+            <br>
+            <label for="question">Votre question* :</label>
+            <textarea name="question" id="question" cols="25" rows="2" required></textarea>
+        </fieldset>
+
+        <br>
+        <div><input type="checkbox" name="accept" id="accept" required>* J'accepte le traitement informatique de ce Formulaire</div>
+        <br>
+        <input type="submit" value="Envoyer" id="Envoyer">
+        <input type="reset" value="Annuler" id="Annuler">
+
+    </form>
+    <hr>
+    
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="">Mention légales</a></li>
+                <li><a href="">Horaires</a></li>
+                <li><a href="">Plan de site</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+
+
+</html>

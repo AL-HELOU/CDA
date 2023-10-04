@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les fonctions ex 2</title>
+</head>
+<body>
+    
+    <h1>Exercice 2 - String Token</h1>
+
+      <p>Concevez la fonction strtok() qui prend 3 paramètres str1, str2, n en entrée et renvoie une chaîne de caractères : str1 est composée d'une liste de mots séparés par le caractère str2. strtok() sert à extraire le nième mot de str1.</p>
+        
+       <h2>Exemple :</h2> 
+        
+       <pre> Pour str1 = « robert ;dupont ;amiens ;80000 », strtok (str1, « ; », 3) doit retourner amiens.
+        
+        Indice : utilisez la méthode split(). </pre>
+
+       <br>
+       <hr>
+
+
+       <pre>la fonction :
+
+        function strtok(str1, str2, n)
+            {             
+                var tab = str1.split(str2);
+                var res = tab[n-1];
+                return res;
+            }
+        var rep = strtok( 'robert; dupont; amiens; 80000', ';', 3);
+        document.write(rep);
+        </pre>
+
+        <hr>
+    <script>
+        function strtok(str1, str2, n)
+            {             
+                var tab = str1.split(str2);
+                var res = tab[n-1];
+                return res;
+            }
+        var rep = strtok( 'robert; dupont; amiens; 80000', ';', 3);
+        document.write(rep);
+    </script>
+</body>
+</html>

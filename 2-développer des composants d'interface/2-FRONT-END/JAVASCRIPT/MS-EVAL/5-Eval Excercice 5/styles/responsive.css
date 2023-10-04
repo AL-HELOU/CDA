@@ -1,0 +1,224 @@
+/*********************************** index.html et tableau.html et .contact.html ********************************/
+@media screen and (max-width: 1440px) and (min-width: 1100px){
+
+    .txtlogo {
+        font-size:26px;
+        padding-right: 400px;
+    }
+}
+
+
+
+
+/*********************************** index.html et tableau.html et .contact.html ********************************/
+@media screen and (max-width: 1100px) and (min-width: 768px){
+
+    .txtlogo {
+        font-size:25px;
+        padding-right: 200px;
+    }
+
+    .logo {
+        width:230px;
+        height: 70px;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+
+    .h1acceuil {
+        font-size: 26px;
+    }
+
+    .h2artcl {
+        font-size: 22px;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width: 768px) and (min-width: 575px) {
+
+/*********************************** index.html et tableau.html et .contact.html ********************************/
+    .logo {
+        width:180px;
+        height: 70px;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+
+    .txtlogo {
+        font-size:25px;
+        padding-right: 70px;
+    }
+    
+    .nav, .navfotr {
+        padding:12px;
+    }
+    
+    .nav-a, .navfotr-a {
+        padding: 6px;
+        margin: 0 4px;
+        font-size: 14.5px;
+    }
+
+    .navfotr-a {
+        font-size: 13px;
+    }
+
+    .promo {
+        height: auto;
+    }
+
+    th,td {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+/******************************************************* index.html max width 768px ************************************************/
+
+    .h1acceuil {
+        font-size: 22px;
+    }
+
+    .h2artcl {
+        font-size: 18px;
+    }
+
+    .artcl {
+        font-size: 14px;
+    }
+
+    .aside {
+        font-size: 13px;
+    }
+
+}
+
+
+
+@media screen and (max-width :575px ){
+
+/*********************************** index.html et tableau.html et .contact.html ********************************/
+    .logo {
+        width:140px;
+        height: 50px;
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+
+    .txtlogo {
+        font-size:14px;
+        padding-right: 60px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav, .navfotr {
+        padding:11px;
+    }
+
+    .navfotr {
+        margin-top: 10px;
+    }
+    
+    .nav-a, .navfotr-a {
+        padding: 4px;
+        margin: 0 3px;
+        font-size: 12.6px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navfotr-a {
+        font-size: 11px;
+    }
+
+    .promo {
+        height: auto;
+    }
+
+/******************************************************* index.html max width 575px ************************************************/
+
+    .h1acceuil {
+        font-size: 16px;
+    }
+
+    .h2artcl {
+        font-size: 16px;
+    }
+
+    .artcl {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    .container{
+        display: block;
+    }
+    .con-sections{
+        width: 100%;
+        padding-bottom: 25px;
+    }
+
+    .aside{
+        display: none;
+    }
+
+/************************************************************ Tableau max width 575px ******************************************************/
+
+    .tablimg {
+    width: 100px;
+    height: 80px;
+    }
+
+    th,td {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+/************************************************************ Contact max width 575px ******************************************************/
+     
+    .form, .h1contact, .oblig {
+    margin-left: 4px;
+    }
+
+    .h1contact {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    .oblig {
+        font-size: 13px;
+        margin: 14px 0;
+        padding-left: 8px;
+    }
+
+    .spanE{
+        font-size: 16px;
+        color: rgb(160, 6, 6);
+    }
+
+    .form {
+        font-size: 13px;
+    }
+
+    .sexeE {
+        font-size: 12px;
+    }
+
+    .accept{
+        font-size: 12px;
+    }
+
+    .envoyer, .annuler {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .small {
+        font-size: 11px;
+    }
+}

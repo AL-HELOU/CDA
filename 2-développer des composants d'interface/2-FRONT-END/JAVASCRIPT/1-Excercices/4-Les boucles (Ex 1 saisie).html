@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1 - Saisie</title>
+</head>
+<body>
+
+    <h1> Les boucles - Exercice 1 - Saisie </h1>
+
+    <p>Créer une page HTML qui demande à l'utilisateur un prénom.</p>
+    <p>La page doit continuer à demander des prénoms à l'utilisateur jusqu'à ce qu'il laisse le champ vide.</p>
+    <p>Enfin, la page affiche sur <strong>la console</strong> le nombre de prénoms et les prénoms saisis.</p>
+
+    
+
+    <script>
+        var i = 0;
+        var prenom = " ";
+
+        while(prenom != null && prenom.length != 0)
+        {   
+            i++
+            prenom = window.prompt ("Saisissez le prenom N°" + i + "\n" + "ou Clic sur Annuler pour arrêter le siasie.");
+            if (prenom  != null  && prenom.length != 0)
+            {console.log(i +" - " +prenom)};
+        }
+        console.log("le nombre des prénoms est :" + --i);
+        // document.write("le nombre des prénoms est : " + i);
+    </script>
+</body>
+</html>

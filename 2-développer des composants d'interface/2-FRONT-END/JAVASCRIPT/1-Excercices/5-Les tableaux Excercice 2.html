@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les tableaux Excercice 2</title>
+</head>
+<body>
+    <pre>
+        Exercice 2
+
+    Créer le programme qui fournira un menu permettant d’obtenir les fonctionnalités suivantes à partir d’un tableau à une dimension :
+
+    Affichage du contenu de tous les postes du tableau,
+    Affichage du contenu d’un poste dont l’index est saisi au clavier,
+    Affichage du maximum et de la moyenne des postes du tableau
+
+    Ce programme sera structuré de la manière suivante :
+
+    une fonction GetInteger pour lire un entier au clavier,
+    une fonction InitTab pour créer et initialiser l’instance de tableau : le nombre de postes souhaité sera entré au clavier,
+    une fonction SaisieTab pour permettre la saisie des différents postes du tableau,
+    une fonction AfficheTab pour afficher tous les postes du tableau,
+    une fonction RechercheTab pour afficher le contenu d’un poste de tableau dont le rang est saisi au clavier
+    une fonction InfoTab qui affichera le maximum et la moyenne des postes.
+
+    Les fonctions seront appelées successivement.
+    </pre>
+
+    <script>
+        /*Exercice 2
+
+Créer le programme qui fournira un menu permettant d’obtenir les fonctionnalités suivantes à partir d’un tableau à une dimension :
+
+    Affichage du contenu de tous les postes du tableau,
+    Affichage du contenu d’un poste dont l’index est saisi au clavier,
+    Affichage du maximum et de la moyenne des postes du tableau
+
+Ce programme sera structuré de la manière suivante :
+
+    une fonction GetInteger pour lire un entier au clavier,
+    une fonction InitTab pour créer et initialiser l’instance de tableau : le nombre de postes souhaité sera entré au clavier,
+    une fonction SaisieTab pour permettre la saisie des différents postes du tableau,
+    une fonction AfficheTab pour afficher tous les postes du tableau,
+    une fonction RechercheTab pour afficher le contenu d’un poste de tableau dont le rang est saisi au clavier
+    une fonction InfoTab qui affichera le maximum et la moyenne des postes.
+
+Les fonctions seront appelées successivement.*/
+
+
+
+// function GetInteger() {
+    
+//    return Number(window.prompt("saisir un nombre entier : "));
+
+// }
+
+
+let max = 0;
+let moy = 0;
+
+// ---------- SAISIR LE NOMBRE DE CELLULES DU TABLEAU ----------
+function InitTAb()
+{
+    let taille = parseInt(window.prompt('Saissisez la taille du tableau :'));
+    tab = new Array(taille);
+}
+
+// ---------- SAISIR LES CELLULES DU TABLEAU MANUELLEMENT ----------
+function SaisieTab()
+{
+    for(i=0; i<tab.length; i++){
+        let num = window.prompt('Saissisez le ' + (i+1) + ' valeur du tableau : ');
+        tab[i] = num;
+    }  
+}
+
+// ---------- AFFICHER TOUTES LES CELLULES DU TABLEAU ----------
+function AfficheTab()
+{
+    tab.forEach(element => document.write(element+' , '));
+}
+
+
+// ---------- AFFICHER LE CONTENU D'UNE CELLULE SPECIFIQUE ----------
+function RechercheTab()
+{
+    let rang = parseInt(window.prompt('Saissisez l\'index d\'un valuer du tableau pour l\'afficher :'));
+    for(i=-1; i<rang; i++){
+        res = tab[rang];
+    }
+    if(res != undefined)
+    {
+    document.write(' |-- le valeur de l\'index ' + rang + ' est : ' +res);
+    }
+    else {
+        document.write(' |-- le valeur de l\'index ' + rang + ' est : -1 (l\'élément cherché n\'est pas présent dans le tableau)' );
+    }
+}
+
+// ---------- AFFICHER LE MINIMUM, LE MAXIMUM DES CELLULES DU TABLEAU ----------
+function Infotab()
+{
+    for(i=0; i<tab.length; i++){
+        max = parseInt(tab[i]) + max;
+        moy = max/2;
+    }
+    document.write(' |-- le maximum est : '+ max + ' |-- la moyenne est : ' + moy)
+}
+
+InitTAb();
+SaisieTab();
+AfficheTab();
+RechercheTab();
+Infotab();
+    </script>
+</body>
+</html>

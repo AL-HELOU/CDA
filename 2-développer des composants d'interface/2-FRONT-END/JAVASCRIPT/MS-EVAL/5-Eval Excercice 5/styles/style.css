@@ -1,0 +1,212 @@
+
+
+/********************************************index.html et tableau.html et contact.html******************************************/
+.body123 {margin: 0;}
+
+.promo {
+    width: 100%;
+    height: auto;
+    padding-top: 5px;
+}
+
+.logo {
+    width:260px;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+.divlogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.txtlogo {
+    font-size:28px;
+    font-weight: 600;
+    padding-right: 490px;
+    font-style: italic;
+}
+
+.nav, .navfotr {
+    background-color: black;
+    padding:17px;
+    clear: both;
+}
+
+.nav-a, .navfotr-a {
+    color: white;
+    padding: 10px;
+    margin: 0 8px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.nav-a:hover , .navfotr-a:hover{
+    color: rgb(172, 172, 172);
+}
+
+.navfotr {
+    margin-top: 8px;
+}
+
+.navfotr-a {
+    font-size: 16px;
+}
+
+
+/******************************************************index.html (page d'accueil)************************************************/
+
+.h1acceuil, .artcl {
+    margin-left: 10px;
+    font-style: italic;
+}
+
+.artcl{
+    font-size: 18px;
+}
+
+.hracceuil{color: rgb(232, 232, 233);}
+
+.h1acceuil {
+    font-size: 28px;
+}
+
+.h2artcl {
+    font-size: 23px;
+}
+
+.container{
+    display: flex;
+}
+
+.con-sections {
+    width: 70%;
+    padding-bottom: 85px;
+}
+
+.aside {
+    width: 30%;
+    background-color: rgb(208, 207, 209);
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+ 
+/*********************************************************tableau.html************************************************************/
+th,td {
+    border:3px solid black;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    }
+
+.tableau {
+    width:100%;
+    padding: 10px 0;
+}
+
+.tablimg {
+    width: 120px;
+    height: 100px;
+}
+
+.tdimg {
+    display: flex;
+    justify-content: center;
+}
+
+/********************************************************contact.html*******************************************************************/
+input {
+    margin-top: 8px;
+}
+
+.spanE{
+    font-size: 18px;
+    color: rgb(160, 6, 6);
+    animation: Test 2s infinite;
+    }
+
+
+.form, .accept {
+    font-size: 17px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.form, .h1contact, .oblig {
+    margin-left: 25px;
+    font-style: italic;
+}
+
+.h1contact {
+    margin-top: 14px;
+    font-size: 28px;
+}
+
+.form{
+    margin-bottom: 20px;
+}
+
+
+.oblig {
+    color: rgb(133, 5, 5);
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: Test 2s infinite;
+}
+@keyframes Test{
+    0%{opacity: 1;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1;}
+}
+
+.hrcontact {
+    color: rgb(209, 212, 212);
+}
+
+.sexeE {
+    font-size: 15px;
+}
+
+#sujet ,input,#question, .envoyer, .annuler {
+    border-color: black;
+    border-radius: 10px; 
+}
+
+#sujet{
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+
+.txtarea {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.envoyer, .annuler {
+    font-size: 15px;
+    margin-bottom: 35px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.envoyer:hover{
+    background-color: rgb(62, 155, 47);
+}
+
+.annuler:hover {
+    background-color: rgb(209, 55, 55);
+}
+
+.small{
+color: rgb(161, 5, 5);
+font-size: 14px;
+font-weight: bolder;
+animation: Test 2s infinite;
+}

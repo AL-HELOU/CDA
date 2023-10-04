@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tableaux</title>
+    <style>
+        table, th, td {
+          border: 2px solid black;
+        }
+        tfoot { background-color:green ;}
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>tableau 1</caption>
+        <colgroup>
+            <col span="4" style="background-color:red">
+        </colgroup>
+
+        <thead>
+            <tr>
+              <th> - </th>
+              <th>Janvier</th>
+              <th>Février</th>
+              <th>Mars</th>
+            </tr> 
+          </thead>
+
+        <tbody>
+            <tr>
+                <td>Pierre</td>
+                <td>65 800</td>
+                <td>53 200</td>
+                <td>46 400</td>
+            </tr>
+            <tr>
+                <td>Paul</td>
+                <td>88 000</td>
+                <td>51 500</td>
+                <td>62 300</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2">Jacques</td> 
+                <td>74 400</td>
+                <td>64 200</td>
+                <td>78 900</td>
+            </tr>
+            <tr>   
+               <td>68 100</td>
+               <td>76 700</td>
+               <td>99 500</td>
+            </tr>  
+        </tbody>
+        
+        <tfoot>
+            <tr>
+              <td>Total</td>
+              <td>228 200</td>
+              <td>168 900</td>
+              <td>187 600</td>
+            </tr>
+         </tfoot>
+
+    </table> 
+</body>
+
+</html>
