@@ -1,0 +1,1199 @@
+
+/*---------------------------------------- HEADER.PHP -----------------------------------------------------*/
+
+#bodys{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-style: italic;
+    color: white;
+    background-image: url("../imgs/background.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+}
+
+.cover {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    vertical-align:bottom;
+}
+
+header{
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.p-title{
+    color: rgb(255, 255, 255); 
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    font-size: 140px;
+    font-weight: 1000;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    animation: Test 3s infinite;
+}
+@keyframes Test{
+    0%{opacity: 1;}
+    40%{opacity: 0.7;}
+    100%{opacity: 1;}
+}
+
+
+.nav-h, .nav-f{
+    display: flex;
+    background-image: url("../imgs/background.jpg");
+}
+.nav-h{
+    box-shadow: 0 4px 15px 5px rgba(227, 12, 51, 0.843);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.nav-f{
+    margin-top: 18px;
+    box-shadow: 0 4px 30px 5px rgba(227, 12, 51, 0.843);
+}
+
+.nav-a, .navfotr-a {
+    color: white;
+    padding: 29px;
+    margin: 5px;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.navfotr-a {
+    padding: 12px;
+    margin: 8px;
+    margin-left: 18px;
+    font-size: 16px;
+}
+
+
+.nav-a:hover , .navfotr-a:hover{
+    color: rgba(227, 12, 51, 0.843);
+    transform: scale(1.03);
+    transition: all 2s ease;
+}
+
+
+.logo {
+    width: 90px;
+	height: auto;
+    margin: 0 8px 0 15px;
+    animation: rotation 3s infinite linear;
+}
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+/*---------------------------------------- DISCS.PHP -----------------------------------------------------*/
+
+.divbodydiscs{
+    margin: 10px;
+}
+
+.p-container{
+    display: flex;
+    justify-content: center;
+    background-image: url("../imgs/background.jpg");
+    box-shadow: 0 4px 15px 5px rgba(227, 12, 51, 0.843);
+}
+
+.p-rec-ajoute{
+    font-weight: 800;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0;
+}
+
+.nmbr-discs{
+    font-weight: 800;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 36px;
+}
+
+.rec-ajoute{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px 5px rgba(227, 12, 51, 0.843);
+    background-image: url("../imgs/background.jpg");
+}
+
+.div-rec-ajoute{
+    display: flex;
+    justify-content: center;
+    margin-right: 80px;
+}
+.div-rec-ajoute p{
+    margin-top: 20px;
+}
+.div-rec-ajoute:hover{
+    transform: scale(1.03);
+    transition: all 2s ease;
+}
+
+.img-rec-ajoute{
+    width: 80px;
+    margin-right: 20px;
+}
+
+.discs-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    margin: 20px;
+    border-radius: 10px;
+    width: 550px;
+    height: 350px;
+    box-shadow: 0 4px 15px 5px rgba(227, 12, 51, 0.843);
+
+}
+
+.discs-imgs{
+    width: 60%;
+    height: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.disc-details{
+    display:block;
+    font-weight: 550;
+    font-size: 13px;
+    margin-left: 14px;
+    width: 40%;
+}
+
+.div-disc-details{
+    margin-left: 0px;
+    margin-bottom: 28px;
+    margin-top: 10px;
+}
+
+.div-disc-title{
+    font-size: 20px;
+}
+
+.div-button-details{
+    margin-top: 80px;
+}
+
+.button-details{
+    font-size: 13px;
+    font-weight: 800;
+    background-color: rgba(249, 245, 246, 0.843);
+    border-radius: 10px;
+    padding: 9px;
+}
+
+.button-details:hover{
+    background-color: rgba(227, 12, 51, 0.843);
+    transform: scale(1.03);
+    transition: all 2s ease;
+}
+
+
+/*---------------------------------------- DISC_NEW.PHP ET forms-----------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.divbodyajoute,
+.divbodymodif,
+.divbodydetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    position: relative;
+    width: 700px;
+    height: 740px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px  0;
+}
+
+.box::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 700px;
+    height: 740px;
+    background: linear-gradient(0deg, transparent,rgba(227, 12, 51, 0.843),rgba(227, 12, 51, 0.843));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 700px;
+    height: 740px;
+    background: linear-gradient(0deg, transparent,rgba(227, 12, 51, 0.843),rgba(227, 12, 51, 0.843));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.form-ajoute,
+.form-modif,
+.form-detail{
+    position: absolute;
+    inset: 6px;
+    border-radius: 8px;
+    background-image: url("../imgs/background.jpg"); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-ajoute h1,
+.form-modif h1,
+.form-detail h1{
+    color: rgba(227, 12, 51, 0.843);
+    font-weight: 1000;
+    font-size: 140x;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.inputbox{
+    width: 400px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.inputbox input{
+    width: 70%;
+    background: black;
+    opacity: 0.8;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    font-size: 0.8em;
+    letter-spacing: 0.08em;
+    padding: 18px;
+}
+.inputbox input:focus{
+background-color: white;
+color: black;
+font-weight: 1000;
+}
+
+.inputbox label{
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: 19px;
+    margin-right: 16px;
+}
+
+.select{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.848);
+    width: 280px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.span-err {
+    clear: both;
+    display: inline-block;
+    overflow: hidden;  
+    background-color: rgba(227, 12, 51, 0.843);
+    padding: 7px;
+    font-size: 0.7vw;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+}
+
+.span-err-empty{
+    padding: 16px;
+    font-size: 16px;
+}
+
+#choixfichier{
+    color: white;
+    font-size: 11px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 16px;
+    border-radius: 10px;
+}
+
+.submit{
+    margin-right: 17px;
+    padding: 6px;
+    font-weight: 700;
+}
+
+.submit:hover {
+background-color: rgba(227, 12, 51, 0.843);
+transform: scale(1.03);
+transition: all 2s ease;
+font-size: 17px;
+}
+
+
+
+/*---------------------------------------- DISC_MODIF.PHP -----------------------------------------------------*/
+.box-modif{
+    position: relative;
+    width: 700px;
+    height: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px  0;
+}
+
+.box-modif::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 700px;
+    height: 1150px;
+    background: linear-gradient(0deg, transparent,rgba(227, 12, 51, 0.843),rgba(227, 12, 51, 0.843));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box-modif::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 700px;
+    height: 1150px;
+    background: linear-gradient(0deg, transparent,rgba(227, 12, 51, 0.843),rgba(227, 12, 51, 0.843));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.buttons-modif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 10px;
+    margin-right: 90px;
+}
+
+
+.detail-img{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 90%;   
+    height: auto;
+    max-height: 400px;
+    box-shadow: 0 4px 15px 5px rgba(227, 12, 51, 0.843);
+}
+
+.inputboxmodif{
+    width: 400px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.inputboxmodif input{
+    width: 70%;
+    background: black;
+    opacity: 0.7;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 500;
+    font-size: 0.7em;
+    letter-spacing: 0.08em;
+    padding: 13px;
+    margin-bottom: 14px;
+}
+
+.inputboxmodif input:focus{
+    background-color: white;
+    color: black;
+    font-weight: 1000;
+}
+
+.inputboxmodif label{
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 19px;
+    margin-right: 16px;
+}
+
+.b-submit-ajout-artist{
+    width: 92%;
+    padding: 6px;
+    background: black;
+    color: white;
+    opacity: 0.8;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.boxartistajoute{
+    width: 500px;
+    height: 650px;
+}
+
+.inputboxartistajoute{
+    margin-left: 100px;
+}
+
+.submitartistajoute{
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+    margin-top: 25px;
+}
+
+
+
+
+/*---------------------------------------- DISC_DETAIL.PHP -----------------------------------------------------*/
+.box-detail{
+    position: relative;
+    width: 700px;
+    height: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 40px  0;
+}
+
+.box-detail::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 700px;
+    height: 1150px;
+    background: linear-gradient(0deg, transparent,rgba(227, 12, 51, 0.843),rgba(227, 12, 51, 0.843));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.box-detail::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 700px;
+    height: 1150px;
+    background: linear-gradient(0deg, transparent,rgba(227, 12, 51, 0.843),rgba(227, 12, 51, 0.843));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+
+.inputboxdetail{
+    width: 400px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.inputboxdetail input{
+    width: 70%;
+    background: black;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 900;
+    font-size: 0.7em;
+    letter-spacing: 0.08em;
+    padding: 13px;
+    margin-bottom: 14px;
+}
+
+.inputboxdetail input:focus{
+    background-color: white;
+    color: black;
+    font-weight: 1000;
+}
+
+.inputboxdetail label{
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 19px;
+    margin-right: 16px;
+}
+
+
+
+
+/*_______________________________________Media queries__________________________________________________*/
+
+@media screen and (max-width: 1330px) and (min-width: 888px){
+/****************************** HEADER.PHP MAX WIDTH 1250px MIN WIDTH 1100px ***********************************************/
+        .p-title{
+            font-size: 80px;
+            top: 30%;
+        }
+    
+        .nav-a, .navfotr-a {
+            padding: 20px;
+            margin: 6px;
+            font-size: 16px;
+        }
+    
+        .navfotr-a {
+            padding: 8px;
+            margin: 4px;
+            margin-left: 8px;
+        }
+    
+    
+        .logo {
+            width: 70px;
+        }
+    
+    /***************************** DISCS.PHP MAX WIDTH 1250px MIN WIDTH 1100px ************************************************/ 
+        .rec-ajoute{
+            font-size: 16px;
+        }
+        
+        .div-rec-ajoute{
+            margin-right: 20px;
+            height: 80px;
+        }
+
+        .div-rec-ajoute p{
+            margin-top: 25px;
+        }
+        
+        .img-rec-ajoute{
+            width: 70px;
+            margin-right: 5px;
+        }
+    
+        .card{
+            margin: 22px;
+            width: 390px;
+            height: 260px;    
+        }
+    
+        .disc-details{
+            font-size: 11px;
+            margin-left: 10px;
+        }
+    
+        .div-disc-details{
+            margin-left: 4px;
+            margin-bottom: 18px;
+            margin-top: 18px;
+        }
+            
+        .div-disc-title{
+            font-size: 15px;
+        }
+    
+        .div-button-details{
+            margin-top: 38px;
+        }
+        
+        .button-details{
+            font-size: 11px;
+            padding: 8px;
+        }
+    }
+
+
+
+@media screen and (max-width: 887px) and (min-width: 576px){
+    /*********************************** HEADER.PHP MAX WIDTH 887px MIN WIDTH 576px ************************************************/
+    .p-title{
+        font-size: 50px;
+        top: 38%;
+    }
+
+
+    .logo {
+        width: 60px;
+    }
+
+
+    .nav-a, .navfotr-a {
+        padding: 16px;
+        margin: 6px;
+        font-size: 16px;
+    }
+
+    .navfotr-a {
+        padding: 14px;
+        margin: 4px;
+        margin-left: 8px;
+        font-size: 14px;
+    }
+
+    /************************************* DISCS.PHP MAX WIDTH 887px MIN WIDTH 576px ************************************************/
+    .p-rec-ajoute{
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    .nmbr-discs{
+        font-size: 16px;
+    }
+
+    .rec-ajoute{
+        font-size: 11px;
+    }
+    
+    .div-rec-ajoute{
+        margin-right: 12px;
+        height: 80px;
+    }
+    
+    .img-rec-ajoute{
+        width: 60px;
+        margin-right: 6px;
+    }
+
+    .card{
+        margin: 16px;
+        width: 280px;
+        height: 180px;    
+    }
+    
+    .discs-imgs{
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .disc-details{
+        display:block;
+        font-weight: 550;
+        font-size: 8px;
+        margin-left: 5px;
+    }
+    
+    .div-disc-details{
+        margin-left: 0px;
+        margin-bottom: 12px;
+        margin-top: 8px;
+    }
+    
+    .div-disc-title{
+        font-size: 10px;
+    }
+    
+    .div-button-details{
+        margin-top: 20px;
+    }
+    
+    .button-details{
+        font-size: 9px;
+        padding: 7px;
+    }
+
+    /************************************* DISC_NEW.PHP MAX WIDTH 887px MIN WIDTH 576px ************************************************/
+    .box{
+        width: 500px;
+        height: 540px;
+        margin: 30px  0;
+    }
+
+    .box::before {
+        width: 500px;
+        height: 540px;
+    }
+
+    .box::after {
+        width: 500px;
+        height: 540px;
+    }
+
+    .form-ajoute h1,
+    .form-modif h1{
+        margin-bottom: 30px;
+        margin-top: 30px;
+        font-size: 24px;
+    }
+    
+    .inputbox input{
+        font-size: 0.7em;
+        padding: 14px;
+    }
+
+    .inputbox label{
+        font-weight: 700;
+        font-size: 15px;
+        margin-top: 15px;
+        margin-right: 16px;
+    }
+
+    .span-err {
+        padding: 9px;
+        font-size: 1vw;
+        margin-bottom: 5px;
+    }
+    
+    .span-err-empty{
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    #choixfichier{
+        font-size: 10px;
+    }
+    
+    .buttons{
+        font-weight: 700;
+        margin: 14px;
+    }
+    
+    .submit{
+        margin-right: 17px;
+        padding: 2px;
+        font-weight: 700;
+    }
+    
+
+    /*------------------------------- DISC_MODIF.PHP MAX WIDTH 887px MIN WIDTH 576px -----------------------------------------------------*/
+    .box-modif{
+        width: 500px;
+        height: 850px;
+    }
+    
+    .box-modif::before{
+        width: 500px;
+        height: 850px;
+    }
+    .box-modif::after{  
+        width: 500px;
+        height: 850px;
+    }
+    
+    
+    .detail-img{
+        margin-top: 40px;
+        margin-bottom: 60px;
+        width: 80%;   
+        height: auto;
+        max-height: 200px;
+    }
+    
+    .inputboxmodif input,
+    .inputboxdetail input{
+        width: 60%;
+        font-weight: 500;
+        font-size: 0.7em;
+        padding: 12px;
+    }
+    
+    .inputboxmodif label,
+    .inputboxdetail label{
+        font-weight: 700;
+        font-size: 12px;
+        margin-top: 19px;
+        margin-right: 16px;
+    }
+
+    .select-fmodif{
+        width: 60%;
+        opacity: 0.8;
+    }
+
+
+    
+    
+    .b-submit-ajout-artist{
+        width: 78%;
+        padding: 6px;
+        background: black;
+        color: white;
+        opacity: 0.8;
+        margin-top: 6px;
+        font-size: 12px;
+        opacity: 0.7;
+    }
+    
+    .boxartistajoute{
+        width: 550px;
+        height: 650px;
+    }
+    
+    .inputboxartistajoute{
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    
+    .submitartistajoute{
+        display: flex;
+        justify-content: center;
+        margin-right: 40px;
+        margin-top: 50px;
+    }
+
+    
+
+
+    /*---------------------------------------- DISC_DETAIL.PHP -----------------------------------------------------*/
+    .box-detail{
+        width: 500px;
+        height: 900px;
+    }
+
+    .box-detail::before{
+        width: 500px;
+        height: 900px;
+    }
+    .box-detail::after{
+        width: 500px;
+        height: 900px;
+    }
+
+    .inputboxdetail{
+        width: 400px;
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+
+
+@media screen and (max-width :575px ){
+    /********************************************** HEADER.PHP MAX WIDTH 575px ************************************************/
+    
+    .p-title{
+        font-size: 27px;
+        top: 40%;
+    }
+
+    .nav-a, .navfotr-a {
+        padding: 12px;
+        margin: 3px;
+        font-size: 12px;
+    }
+    
+    .navfotr-a {
+        padding: 8px;
+        margin: 4px;
+        margin-left: 8px;
+    }
+
+
+    .logo {
+        width: 40px;
+    }
+
+    /************************************************ DISCS.PHP MAX WIDTH 575px ************************************************/
+    .p-rec-ajoute{
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .nmbr-discs{
+        font-size: 12px;
+        margin-top: 24px;
+    }
+    
+    .rec-ajoute{
+        font-size: 6px;
+    }
+    
+    .div-rec-ajoute{
+        margin-right: 8px;
+        height: 45px;
+    }
+    
+    .img-rec-ajoute{
+        width: 38px;
+        margin-right: 5px;
+    }
+
+    .card{
+        margin: 16px;
+        width: 350px;
+        height: 180px;    
+    }
+    
+    .discs-imgs{
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .disc-details{
+        display:block;
+        font-weight: 550;
+        font-size: 9px;
+        margin-left: 10px;
+    }
+    
+    .div-disc-details{
+        margin-left: 6px;
+        margin-bottom: 12px;
+        margin-top: 10px;
+    }
+    
+    .div-disc-title{
+        font-size: 14px;
+    }
+    
+    .div-button-details{
+        margin-top: 20px;
+    }
+    
+    .button-details{
+        font-size: 9px;
+        padding: 6px;
+    }
+
+
+    /************************************* DISC_NEW.PHP  MAX WIDTH 575px ************************************************/
+
+    .box{
+        width: 350px;
+        height: 490px;
+        margin: 30px  0;
+    }
+
+    .box::before {
+        width: 350px;
+        height: 490px;
+    }
+
+    .box::after {
+        width: 350px;
+        height: 490px;
+    }
+    
+
+    .form-ajoute h1,
+    .form-modif h1,
+    .form-detail h1{
+        margin-bottom: 30px;
+        margin-top: 0;
+        font-size: 20px;
+    }
+    
+    .inputbox input{
+        font-size: 0.6em;
+        padding: 10px;
+        width: 60%;
+    }
+
+    .inputbox label{
+        font-weight: 600;
+        font-size: 12px;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 38px;
+    }
+
+    .select{
+        width: 60%;
+        font-weight: 500;
+    }
+    
+
+    .span-err {
+        padding: 9px;
+        font-size: 1.8vw;
+        margin-bottom: 2px;
+        margin-left: 36px;
+    }
+    
+    .span-err-empty{
+        padding: 8px;
+        font-size: 10px;
+        margin-left: 0;
+    }
+    
+    #choixfichier{
+        font-size: 8px;
+    }
+    
+    .buttons{
+        margin: 10px;
+    }
+    
+    .submit{
+        padding: 0;
+        font-weight: 530;
+        font-size: 12px;
+    }
+
+
+
+     /*------------------------------ DISC_MODIF.PHP  MAX WIDTH 575px -----------------------------------------------------*/
+    .box-modif{
+        width:320px;
+        height: 700px;
+    }
+    
+    .box-modif::before{
+        width:320px;
+        height: 700px;;
+    }
+    .box-modif::after{  
+        width:320px;
+        height: 700px;
+    }
+    
+    
+    .detail-img{
+        margin-top: 30px;
+        margin-bottom: 40px;
+        width: 60%;   
+        height: auto;
+        max-height: 140px;
+        margin-left: 70px;
+    }
+    
+    .inputboxmodif input,
+    .inputboxdetail input{
+        width: 50%;
+        font-weight: 500;
+        font-size: 0.6em;
+        padding: 8px;
+        margin-bottom: 3px;
+    }
+    
+    .inputboxmodif label,
+    .inputboxdetail label{
+        font-weight: 700;
+        font-size: 12px;
+        margin-top: 11px;
+        margin-right: 10px;
+        margin-left: 70px;
+    }
+
+    .select-fmodif{
+        width: 50%;
+        opacity: 0.8;
+    }
+    
+    .b-submit-ajout-artist{
+        background: black;
+        color: white;
+        opacity: 0.8;
+        font-size: 9px;
+        font-weight: 700;
+        margin-right: 10px;
+        margin-left: 70px;
+        width: 67%;
+        padding: 6px;
+        margin-top: 0px;
+        margin-bottom: 12px;
+    }
+
+    .buttons-modif{
+        margin-left: 80px;
+    } 
+
+
+
+      
+    .boxartistajoute{
+        width: 320px;
+        height: 450px;
+    }
+
+    .boxartistajoute input{
+        width: 50%;
+        font-size: 9px;
+    }
+
+    .boxartistajoute label{
+        font-size: 11px;
+    }
+    
+    .inputboxartistajoute{
+        margin-left: 40px;
+        margin-top: 40px;
+    }
+    
+    .submitartistajoute{
+        display: flex;
+        justify-content: center;
+        margin-left: 120px;
+        margin-top: 25px;
+        width: 50%;
+    }
+
+    .submitartistajoute input{
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+
+
+        /*---------------------------------------- DISC_DETAIL.PHP -----------------------------------------------------*/
+        .box-detail{
+            width: 380px;
+            height: 700px;
+        }
+    
+        .box-detail::before{
+            width: 380px;
+            height: 900px;
+        }
+        .box-detail::after{
+            width: 380px;
+            height: 900px;
+        }
+    
+        .inputboxdetail{
+            width: 400px;
+            display:flex;
+            flex-wrap: wrap;
+        }
+}
