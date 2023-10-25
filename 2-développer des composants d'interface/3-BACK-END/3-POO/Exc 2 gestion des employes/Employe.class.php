@@ -122,10 +122,10 @@ class Employe
 
         if ($datemois == "11" && $datejour == "30")
         {
-            $envprime = "La prime de $prime € a été envoyé à la banque le $datejour/$datemois/$dateannee.";
+            $envprime = "La prime d'ancienneté de $prime € a été envoyé à la banque le $datejour/$datemois/$dateannee.";
             return  $envprime;
         }else{
-            $envprime = "La prime est versée au 30/11 de chaque année.";
+            $envprime = "La prime d'ancienneté est versée au 30/11 de chaque année.";
             return $envprime;
         }
     }
